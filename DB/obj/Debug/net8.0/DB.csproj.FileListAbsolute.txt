@@ -1,0 +1,15 @@
+C:\Users\abian\Documents\GitHub\ContactBook\DB\bin\Debug\net8.0\DB.deps.json
+C:\Users\abian\Documents\GitHub\ContactBook\DB\bin\Debug\net8.0\DB.runtimeconfig.json
+C:\Users\abian\Documents\GitHub\ContactBook\DB\bin\Debug\net8.0\DB.dll
+C:\Users\abian\Documents\GitHub\ContactBook\DB\bin\Debug\net8.0\DB.pdb
+C:\Users\abian\Documents\GitHub\ContactBook\DB\obj\Debug\net8.0\DB.csproj.AssemblyReference.cache
+C:\Users\abian\Documents\GitHub\ContactBook\DB\obj\Debug\net8.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abian\Documents\GitHub\ContactBook\DB\obj\Debug\net8.0\DB.AssemblyInfoInputs.cache
+C:\Users\abian\Documents\GitHub\ContactBook\DB\obj\Debug\net8.0\DB.AssemblyInfo.cs
+C:\Users\abian\Documents\GitHub\ContactBook\DB\obj\Debug\net8.0\DB.csproj.CoreCompileInputs.cache
+C:\Users\abian\Documents\GitHub\ContactBook\DB\obj\Debug\net8.0\DB.sourcelink.json
+C:\Users\abian\Documents\GitHub\ContactBook\DB\obj\Debug\net8.0\DB.dll
+C:\Users\abian\Documents\GitHub\ContactBook\DB\obj\Debug\net8.0\refint\DB.dll
+C:\Users\abian\Documents\GitHub\ContactBook\DB\obj\Debug\net8.0\DB.pdb
+C:\Users\abian\Documents\GitHub\ContactBook\DB\obj\Debug\net8.0\DB.genruntimeconfig.cache
+C:\Users\abian\Documents\GitHub\ContactBook\DB\obj\Debug\net8.0\ref\DB.dll

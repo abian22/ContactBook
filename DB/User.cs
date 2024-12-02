@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DB
 {
-    internal class User
+    public class User
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //Autoincrement id

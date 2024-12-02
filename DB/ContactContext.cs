@@ -9,6 +9,6 @@ namespace DB
 
         }
 
-        public DbSet<User> User {  get; set; }
+        public DbSet<User> Users {  get; set; }
     }
 }
