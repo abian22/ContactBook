@@ -31,10 +31,25 @@ namespace ContactBook.Controllers
             }
             catch (Exception ex)
             {
-                // Log the exception (opcional)
                 return StatusCode(500, new { message = "An error occurred while retrieving users", error = ex.Message });
             }
         }
 
+        [HttpPost]
+
+        public async Task<ActionResult<User>> PostUser([FromBody] User user)
+        {
+            try
+            {
+                _context.Users.Add(user); // Asegúrate de que Users existe en el contexto
+                await _context.SaveChangesAsync();
+
+                return CreatedAtAction(nameof(GetUsers), new { id = user.UserId }, user);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message); // Manejo de errores genérico
+            }
+        }
     }
 }
