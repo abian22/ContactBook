@@ -76,6 +76,61 @@ namespace ContactBook.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
-    };
 
+        [HttpPut("{id}")]
+        public async Task<ActionResult<User>> PutUser(int id, User user)
+        {
+            try
+            {
+                var existingUser = await _context.Users.FindAsync(id);
+
+                if (existingUser == null)
+                {
+                    return NotFound(new { message = "User not found" });
+                }
+                if (!string.IsNullOrEmpty(user.Name))
+                {
+                    existingUser.Name = user.Name;
+                }
+
+                if (!string.IsNullOrEmpty(user.LastName))
+                {
+                    existingUser.LastName = user.LastName;
+                }
+
+                if (!string.IsNullOrEmpty(user.Category))
+                {
+                    existingUser.Category = user.Category;
+                }
+
+                if (user.PhoneNumber.HasValue)  
+                {
+                    existingUser.PhoneNumber = user.PhoneNumber;
+                }
+
+                if (!string.IsNullOrEmpty(user.Address))
+                {
+                    existingUser.Address = user.Address;
+                }
+
+                if (!string.IsNullOrEmpty(user.Email))
+                {
+                    existingUser.Email = user.Email;
+                }
+
+                if (user.BirthDate.HasValue)
+                {
+                    existingUser.BirthDate = user.BirthDate;
+                }
+
+                await _context.SaveChangesAsync();
+                return Ok(existingUser);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+    }
 }
