@@ -8,18 +8,33 @@ namespace ContactBook.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private ContactContext _context;
+        private ContactContext _context; //Access to the database context
 
-        public UserController(ContactContext context)
+        public UserController(ContactContext context) //constructor that receives the context as a parameter
         {
-            _context = context;
+            _context = context; //assing the context to the private field
         }
 
         [HttpGet]
         public ActionResult<IEnumerable<User>> GetUsers()
         {
-            var users = _context.Users.ToList();
-            return Ok(users);
+            try
+            {
+                var users = _context.Users.ToList();
+
+                if (users == null || users.Count == 0)
+                {
+                    return NotFound(new { message = "No users found" });
+                }
+
+                return Ok(users);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (opcional)
+                return StatusCode(500, new { message = "An error occurred while retrieving users", error = ex.Message });
+            }
         }
+
     }
 }
