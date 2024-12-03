@@ -1,5 +1,6 @@
 ﻿using DB;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ContactBook.Controllers
@@ -41,15 +42,40 @@ namespace ContactBook.Controllers
         {
             try
             {
-                _context.Users.Add(user); // Asegúrate de que Users existe en el contexto
+                _context.Users.Add(user);
                 await _context.SaveChangesAsync();
 
                 return CreatedAtAction(nameof(GetUsers), new { id = user.UserId }, user);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, ex.Message); // Manejo de errores genérico
+                return StatusCode(500, ex.Message);
             }
         }
-    }
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteUser(int id)
+        {
+            try
+            {
+                var user = await _context.Users.FindAsync(id);
+                if (user == null)
+                {
+                    return NotFound(new { message = "User not found" });
+                }
+                _context.Users.Remove(user);
+                await _context.SaveChangesAsync();
+
+                return Ok(new
+                {
+                    message = "User successfully deleted",
+                    deletedUser = user
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+    };
+
 }
