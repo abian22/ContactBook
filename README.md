@@ -5,7 +5,7 @@ This is the backend for a Contact Book website. It allows users to create, read,
 
 ## Requirements  
 To run this project, make sure you have the following installed:  
-- **.NET SDK** (version 7.0+ or higher)  
+- **.NET SDK**
 - **SQL Server Management Studio (SSMS)**: For managing the SQL Server database.  
   *(Note: You need a server named ".", or you'll need to update the server name in the `appsettings.json` file if using a different name.)*  
 - **Visual Studio**  
@@ -13,29 +13,27 @@ To run this project, make sure you have the following installed:
 ## Setup
 
 1. Clone the repository:
-    ```bash
-    git clone <repository-url>
-    ```
+2. 
 
-2. Restore dependencies:  
+3. Restore dependencies:  
     ```bash  
     dotnet restore  
     ```  
 
-3. Add migrations (using the Package Manager Console in Visual Studio):  
+4. Add migrations (using the Package Manager Console in Visual Studio):  
     ```bash  
     Add-Migration InitDB  
     ```  
 
-4. Build the project:  
+5. Build the project:  
     ```bash  
     dotnet build  
     ```  
 
-5. Run the project:  
+6. Run the project:  
     ```bash  
     dotnet run  
     ```
 
-6. (Optional) If you encounter any issues, ensure that the server name in `appsettings.json` is correct and matches your SQL Server setup.
+7. (Optional) If you encounter any issues, ensure that the server name in `appsettings.json` is correct and matches your SQL Server setup.
 
