@@ -12,7 +12,7 @@ To run this project, make sure you have the following installed:
 
 ## Setup
 
-1. Clone the repository:
+1. Clone the repository
 
 2. Restore dependencies:  
     ```bash  
