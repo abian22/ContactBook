@@ -1,5 +1,5 @@
-# Project Name
-Contact Book
+# Contact Book
+
 ## Description
 This is the backend for a Contact Book website. It allows users to create, read, update, and delete contacts, with all data stored in an SQL database. The frontend for this application can be found in the [ContactBookFront repository](link-to-frontend-repo).
 
