@@ -19,16 +19,20 @@ namespace DB
         public string Name { get; set; }
 
         [StringLength(50, ErrorMessage = "Last name cannot exceed 50 characters")]
-        public string LastName { get; set; }
-        public string Category { get; set; }
+        [MinLength(1, ErrorMessage = "Name cannot be an empty string")]
+        public string? LastName { get; set; }
+        [MinLength(1, ErrorMessage = "Name cannot be an empty string")]
+
+        public string? Category { get; set; }
 
         [Range(100000000, 99999999999, ErrorMessage = "Phone number must be between 9 and 11 digits.")]
-        public int PhoneNumber { get; set; }
-        public string Address { get; set; }
+        public int? PhoneNumber { get; set; }
+        [MinLength(1, ErrorMessage = "Name cannot be an empty string")]
+
 
         [EmailAddress(ErrorMessage = "Invalid email format")]
-        public string Email { get; set; }
-        public DateTime BirthDate { get; set; }
+        public string? Email { get; set; }
+
 
 
     }

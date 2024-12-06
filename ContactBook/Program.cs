@@ -14,9 +14,15 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ContactContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ContactConection"))
 );
 
-
-
 var app = builder.Build();
+
+app.UseCors(policy =>
+{
+    policy.WithOrigins("http://localhost:5173")
+          .AllowAnyHeader()
+          .AllowAnyMethod();
+}); ;
+
 
 using (var scope = app.Services.CreateScope())
 {

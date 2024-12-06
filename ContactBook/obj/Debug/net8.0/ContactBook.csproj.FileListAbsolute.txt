@@ -28,7 +28,6 @@ C:\Users\abian\Documents\GitHub\ContactBook\ContactBook\obj\Debug\net8.0\staticw
 C:\Users\abian\Documents\GitHub\ContactBook\ContactBook\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ContactBook.props
 C:\Users\abian\Documents\GitHub\ContactBook\ContactBook\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ContactBook.props
 C:\Users\abian\Documents\GitHub\ContactBook\ContactBook\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\abian\Documents\GitHub\ContactBook\ContactBook\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\abian\Documents\GitHub\ContactBook\ContactBook\obj\Debug\net8.0\ContactB.61B6FB92.Up2Date
 C:\Users\abian\Documents\GitHub\ContactBook\ContactBook\obj\Debug\net8.0\ContactBook.dll
 C:\Users\abian\Documents\GitHub\ContactBook\ContactBook\obj\Debug\net8.0\refint\ContactBook.dll
@@ -173,3 +172,4 @@ C:\Users\abian\Documents\GitHub\ContactBook\ContactBook\bin\Debug\net8.0\runtime
 C:\Users\abian\Documents\GitHub\ContactBook\ContactBook\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\abian\Documents\GitHub\ContactBook\ContactBook\bin\Debug\net8.0\DB.dll
 C:\Users\abian\Documents\GitHub\ContactBook\ContactBook\bin\Debug\net8.0\DB.pdb
+C:\Users\abian\Documents\GitHub\ContactBook\ContactBook\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

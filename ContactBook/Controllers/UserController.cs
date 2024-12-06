@@ -108,20 +108,11 @@ namespace ContactBook.Controllers
                     existingUser.PhoneNumber = user.PhoneNumber;
                 }
 
-                if (!string.IsNullOrEmpty(user.Address))
-                {
-                    existingUser.Address = user.Address;
-                }
-
                 if (!string.IsNullOrEmpty(user.Email))
                 {
                     existingUser.Email = user.Email;
                 }
 
-                if (user.BirthDate.HasValue)
-                {
-                    existingUser.BirthDate = user.BirthDate;
-                }
 
                 await _context.SaveChangesAsync();
                 return Ok(existingUser);

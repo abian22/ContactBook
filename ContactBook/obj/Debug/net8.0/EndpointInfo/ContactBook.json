@@ -205,19 +205,10 @@
             "format": "int32",
             "nullable": true
           },
-          "address": {
+          "email": {
             "minLength": 1,
             "type": "string",
-            "nullable": true
-          },
-          "email": {
-            "type": "string",
             "format": "email",
-            "nullable": true
-          },
-          "birthDate": {
-            "type": "string",
-            "format": "date",
             "nullable": true
           }
         },
