@@ -13,27 +13,26 @@ To run this project, make sure you have the following installed:
 ## Setup
 
 1. Clone the repository:
-2. 
 
-3. Restore dependencies:  
+2. Restore dependencies:  
     ```bash  
     dotnet restore  
     ```  
 
-4. Add migrations (using the Package Manager Console in Visual Studio):  
+3. Add migrations (using the Package Manager Console in Visual Studio):  
     ```bash  
     Add-Migration InitDB  
     ```  
 
-5. Build the project:  
+4. Build the project:  
     ```bash  
     dotnet build  
     ```  
 
-6. Run the project:  
+5. Run the project:  
     ```bash  
     dotnet run  
     ```
 
-7. (Optional) If you encounter any issues, ensure that the server name in `appsettings.json` is correct and matches your SQL Server setup.
+6. (Optional) If you encounter any issues, ensure that the server name in `appsettings.json` is correct and matches your SQL Server setup.
 
