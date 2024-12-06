@@ -1,7 +1,7 @@
 # Contact Book
 
 ## Description
-This is the backend for a Contact Book website. It allows users to create, read, update, and delete contacts, with all data stored in an SQL database. The frontend for this application can be found in the [ContactBookFront repository](link-to-frontend-repo).
+This is the backend for a Contact Book website. It allows users to create, read, update, and delete contacts, with all data stored in an SQL database. The frontend for this application can be found in the [ContactBookFront repository](https://github.com/abian22/ContactBookFront).
 
 ## Requirements  
 To run this project, make sure you have the following installed:  
